@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+body {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+}
+
+a {
+
+
+    text-decoration: none;
+
+    color: white;
+}
+
+.font {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* libary Css class */
+.container {
+    width: 60%;
+    margin: 0px auto;
+}
+
+.h {
+    height: 500px;
+}
+
+.border-img {
+
+    border: 2px solid;
+
+    border-image: linear-gradient(rgba(29, 129, 160, 0.61), rgb(248, 180, 220));
+    border-image-slice: 1;
+    overflow: hidden;
+    /* cursor: pointer; */
+}
+
+
+.img {
+    width: 100%;
+
+}
+
+.c-cyan {
+    color: rgb(54, 20, 175);
+    font-weight: 800;
+}
+
+.bg-yellow {
+    background-color: rgba(197, 197, 91, 0.795);
+}
+
+.bg-orange {
+    background-color: rgba(216, 104, 84, 0.644);
+}
+
+.bg-dark {
+    background-color: black;
+}
+
+.bg-green {
+    background-color: rgba(0, 182, 70, 0.685);
+}
+
+.bg-indigo {
+    background-color: rgba(177, 129, 212, 0.534);
+}
+
+.bgm-cyan {
+    background-image: linear-gradient(rgba(91, 190, 190, 0.781), rgba(145, 25, 105, 0.397));
+}
+
+.bg-purple {
+    background-color: rgba(209, 182, 235, 0.74);
+}
+
+.bg-light {
+    background-color: white;
+}
+
+.bg-gray {
+
+
+    background-color: rgba(45, 119, 153, 0.692);
+}
+
+.bgm-orange {
+    background-image: linear-gradient(rgba(228, 120, 31, 0.781), rgba(19, 18, 18, 0.397));
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* libary Css class  finished*/
+
+.section-1 .img-thumb {
+    width: 46px;
+    height: 46px;
+    margin-top: 50%;
+}
+
+.section-1 li h2 {
+    margin-left: 15px;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    /* display: flex;
+    justify-content: center; */
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+nav form {
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .section-2 li {
+
+    padding: 5px 5px;
+    border-radius: 15px;
+
+    margin-left: 20px;
+    /* background-color: rgba(37, 37, 29, 0.219); */
+
+}
+
+nav a {
+    text-decoration: none;
+    color: honeydew;
+
+    position: static;
+
+}
+
+
+nav button {
+
+
+    background-color: blueviolet;
+    padding: 5px;
+    border-radius: 5px;
+    border: hidden;
+    cursor: pointer;
+
+    margin-right: 1.5rem;
+}
+
+.search {
+    border-radius: 15px;
+    border: hidden;
+    text-align: center;
+}
+
+.section-2 {
+    align-items: center;
+    padding: 10px;
+}
+
+/* Account Page Css style */
+
+
+.main-div {
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 60px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.box {
+    width: 100%;
+    height: 250px;
+}
+
+.box-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-column-gap: 60px;
+    padding: 20px;
+}
+
+.main-section h1,
+h2 {
+    text-align: center;
+    padding: 5px;
+
+}
+
+.main-section h2 {
+
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+
+#deposite-input-box {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 40%;
+    margin-left: 25%;
+}
+
+#withdraw-input-box {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    width: 40%;
+    margin-left: 25%;
+}
+
+
+
+
+
+
+
+
+/* Login page css styel */
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-div {
+    padding: 2%;
+    display: block;
+}
+
+
+
+#input-email {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#input-pass {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+
+.login-section button {
+    color: white;
+    background-color: blue;
+    font-weight: 800;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+/* hover section */
+/* body:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform ease-out;
+
+
+} */
+
+/* end */
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+@media only screen and (max-width: 500px) {}
