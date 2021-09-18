@@ -52,6 +52,9 @@ balancetotal.innerText= newbalancetotl;
 }
 };
 
+
+
+
 // deposite button
 document.getElementById('deposite-button').addEventListener('click',function()
 {     
@@ -61,6 +64,8 @@ if (depositeammount > 0) {
 updateblance(depositeammount,true);
 }
 });
+
+
 
 // withdraw button
 document.getElementById('withdraw-button').addEventListener('click',function()
