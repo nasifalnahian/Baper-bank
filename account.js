@@ -1,12 +1,31 @@
+function getinputvalue() {
+    const depositeinput=document.getElementById('deposite-input-box');
+    const depositeammountText = depositeinput.value;
+    const depositeammount =parseFloat(depositeammountText);
+
+    depositeinput.value='';
+    return depositeammount;
+
+
+   
+};
+
+
 document.getElementById('deposite-button').addEventListener('click',function()
 {
     // button connect
     // console.log('work');
 
-    const depositeinput=document.getElementById('deposite-input-box');
-    const depositeammountText = depositeinput.value;
-    const depositeammount =parseFloat(depositeammountText);
+    // const depositeinput=document.getElementById('deposite-input-box');
+    // const depositeammountText = depositeinput.value;
+    // const depositeammount =parseFloat(depositeammountText);
     // console.log(depositeammount);
+
+
+
+
+ 
+const depositeammount = getinputvalue();
 
     // input box data collect 
     // depositeammonut =  what ever i input in box
@@ -23,13 +42,13 @@ const predepositebalanceText=depositebalance.innerText;
 const predepositebalance=parseFloat(predepositebalanceText);
 // input data send to deposite data
 
-const currentdeposite =parseFloat(predepositebalance)+ depositeammount;
+const currentdeposite =parseFloat(predepositebalance)+depositeammount;
 // console.log(newdepositebalance);
  
 depositebalance.innerText = currentdeposite;
 
 // clear input box
-depositeinput.value='';
+// depositeinput.value='';
 
 
 

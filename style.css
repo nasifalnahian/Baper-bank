@@ -299,11 +299,15 @@ footer p {
 
 @media only screen and (min-width:100px) and (max-width: 942px) {
 
+    nav {
+        width: 100%;
+    }
 
     nav #home,
     #contact,
     #form {
         visibility: hidden;
+
 
     }
 
