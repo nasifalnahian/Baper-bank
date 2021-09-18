@@ -11,7 +11,7 @@ function getinputvalue(inputid) {
     return depositeammount;  
 };
 
-//   using function to create adding item 
+//   using function to create withdraw item 
 
 function totalfield(totalfieldid,ammount){
 
@@ -23,37 +23,39 @@ debugger;
 
 };
 
+// udoate new total blance
 
+function updateblance(depositeammount,add){
+    const balancetotal = document.getElementById('total-balance');
 
+const balancetotalText =balancetotal.innerText;
+
+const prebalancetotal = parseFloat(balancetotalText);
+
+if (add == true) {
+    const newbalancetotl = prebalancetotal + depositeammount;
+
+balancetotal.innerText= newbalancetotl;
+}
+else{
+    const newbalancetotl = prebalancetotal - depositeammount;
+
+balancetotal.innerText= newbalancetotl;
+}
+};
+
+// deposite button
 document.getElementById('deposite-button').addEventListener('click',function()
-{
-      
+{     
 const depositeammount = getinputvalue('deposite-input-box');
 totalfield('deposite-balance',depositeammount)
-
-const balancetotal = document.getElementById('total-balance');
-
-const balancetotalText =balancetotal.innerText;
-
-const prebalancetotal = parseFloat(balancetotalText);
-
-const newbalancetotl = prebalancetotal + depositeammount;
-
-balancetotal.innerText= newbalancetotl;
-// update Withdraw balance
+updateblance(depositeammount,true);
 });
 
+// withdraw button
 document.getElementById('withdraw-button').addEventListener('click',function()
-{
-    
+{  
 const  withdrawammount = getinputvalue('withdraw-input-box');
-
 totalfield('withdraw-balance',withdrawammount);
-
-
-const balancetotal = document.getElementById('total-balance');
-const balancetotalText =balancetotal.innerText;
-const prebalancetotal = parseFloat(balancetotalText);
-const newbalancetotl = prebalancetotal - withdrawammount;
-balancetotal.innerText= newbalancetotl;
+updateblance(withdrawammount,false);
 });
